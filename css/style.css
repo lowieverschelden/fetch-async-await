@@ -45,7 +45,7 @@ header {
   border-radius: 4px;
 }
 
-#searchBtn, #prevBtn, #nextBtn, #resetBtn {
+#searchBtn, #prevBtn, #nextBtn, #resetBtn, #svdPokes{
   margin: 10px 0;
   padding: 10px;
   border: none;
@@ -63,6 +63,60 @@ header {
   color: white;
 }
 
-#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover {
+
+#svdPokes {
+  background-color: #f32121;
+  color: white;
+}
+
+#searchBtn:hover, #prevBtn:hover, #nextBtn:hover, #resetBtn:hover, #svdPokes:hover {
   opacity: 0.8;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; 
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+li:hover {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+img {
+  width: 80px; 
+  height: 80px; 
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+li h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0;
 }
